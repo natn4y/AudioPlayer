@@ -1,12 +1,20 @@
 export default {
   colors: {
+    elevation: 6,
+    shadowOffset: { width: 5, height: 5 },
+    shadowColor: '#0062ff',
+    shadowOpacity: 0.5,
+    shadowRadius: 10,
     primary: {
-      main: '#5636d3',
-      light: 'rgba(255,133,44,0.3)',
+      main: '#000000',
+      light: 'rgba(3, 101, 206, 0.8)',
     },
     secondary: {
       main: '#ff872c',
       light: 'rgba(18,164,84,0.5)',
+      gray: {
+        300: 'rgba(50,50,50,0.9)',
+      },
     },
     success: {
       main: '#12A454',
@@ -17,12 +25,7 @@ export default {
       light: 'rgba(232,63,91,0.5)',
     },
     shape: '#fff',
-    title: '#363f5f',
-    text: '#962cb2',
-    background: '#f0f2f5',
   },
 
-  fonts: {
-    
-  }
+  fonts: {},
 }
