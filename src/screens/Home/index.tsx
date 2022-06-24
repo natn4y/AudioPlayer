@@ -31,12 +31,11 @@ import {
 export default function Home() {
   const styles = StyleSheet.create({
     ArtworkWrapperStyle: {
-      elevation: 25,
+      elevation: 6,
       shadowOffset: { width: 5, height: 5 },
       shadowColor: '#0062ff',
       shadowOpacity: 0.5,
       shadowRadius: 10,
-      backgroundColor: 'transparent',
     },
   })
   return (
@@ -45,6 +44,7 @@ export default function Home() {
         <Wrapper>
           <MainContainer>
             <Title>https://github.com/natn4y</Title>
+
             <ArtworkWrapper
               style={styles.ArtworkWrapperStyle}
             >
@@ -54,6 +54,17 @@ export default function Home() {
             </ArtworkWrapper>
             <ArtistName>NIRVANA</ArtistName>
             <ArtistMusic>Something in the Way</ArtistMusic>
+            <SliderWrapper
+              value={10}
+              minimumValue={0}
+              maximumValue={100}
+              thumbTintColor={theme.colors.primary.light}
+              minimumTrackTintColor={
+                theme.colors.primary.light
+              }
+              maximumTrackTintColor={theme.colors.shape}
+              onSlidingComplete={() => {}}
+            />
           </MainContainer>
         </Wrapper>
         <BottomWrapper>

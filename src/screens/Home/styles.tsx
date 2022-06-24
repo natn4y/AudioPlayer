@@ -1,6 +1,7 @@
 import styled from 'styled-components/native'
 import { RFValue } from 'react-native-responsive-fontsize'
 import { Image } from 'react-native'
+import Slider from '@react-native-community/slider'
 
 export const Container = styled.SafeAreaView`
   flex: 1;
@@ -44,6 +45,13 @@ export const ArtistMusic = styled.Text`
   color: ${({ theme }) => theme.colors.secondary.gray[300]};
   font-size: ${RFValue(13)}px;
   font-weight: 600;
+`
+
+export const SliderWrapper = styled(Slider)`
+  width: 350px;
+  height: 40px;
+  margin-top: 25px;
+  flex-direction: row;
 `
 
 export const MainContainer = styled.View`
