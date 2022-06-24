@@ -31,11 +31,12 @@ import {
 export default function Home() {
   const styles = StyleSheet.create({
     ArtworkWrapperStyle: {
-      elevation: 6,
+      elevation: 20,
       shadowOffset: { width: 5, height: 5 },
       shadowColor: '#0062ff',
       shadowOpacity: 0.5,
       shadowRadius: 10,
+      backgroundColor: 'transparent',
     },
   })
   return (
