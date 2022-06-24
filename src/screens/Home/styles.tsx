@@ -1,7 +1,6 @@
 import styled from 'styled-components/native'
 import { RFValue } from 'react-native-responsive-fontsize'
 import { Image } from 'react-native'
-import Slider from '@react-native-community/slider'
 
 export const Container = styled.SafeAreaView`
   flex: 1;
@@ -10,7 +9,42 @@ export const Container = styled.SafeAreaView`
   background-color: ${({ theme }) =>
     theme.colors.primary.main};
 `
+export const Wrapper = styled.View`
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  background-color: ${({ theme }) =>
+    theme.colors.primary.main};
+`
 
+export const Title = styled.Text`
+  color: ${({ theme }) => theme.colors.shape};
+  font-size: ${RFValue(16)}px;
+`
+
+export const ArtworkWrapper = styled.View`
+  margin-top: 50px;
+  margin-bottom: 25px;
+  width: 250px;
+  height: 320px;
+`
+
+export const Artwork = styled(Image)`
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+`
+
+export const ArtistName = styled.Text`
+  color: ${({ theme }) => theme.colors.shape};
+  font-size: ${RFValue(16)}px;
+`
+
+export const ArtistMusic = styled.Text`
+  color: ${({ theme }) => theme.colors.secondary.gray[300]};
+  font-size: ${RFValue(13)}px;
+  font-weight: 600;
+`
 
 export const MainContainer = styled.View`
   align-items: center;

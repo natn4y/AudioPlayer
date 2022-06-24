@@ -10,19 +10,52 @@ import {
 } from 'react-native'
 
 import Ionicons from 'react-native-vector-icons/Ionicons'
+import Slider from '@react-native-community/slider'
 
 import theme from '../../global/styles/theme'
 
 import {
   Container,
+  Title,
+  MainContainer,
   BottomView,
+  Wrapper,
   BottomWrapper,
+  ArtworkWrapper,
+  Artwork,
+  ArtistName,
+  ArtistMusic,
+  SliderWrapper,
 } from './styles'
 
 export default function Home() {
+  const styles = StyleSheet.create({
+    ArtworkWrapperStyle: {
+      elevation: 25,
+      shadowOffset: { width: 5, height: 5 },
+      shadowColor: '#0062ff',
+      shadowOpacity: 0.5,
+      shadowRadius: 10,
+      backgroundColor: 'transparent',
+    },
+  })
   return (
     <>
       <Container>
+        <Wrapper>
+          <MainContainer>
+            <Title>https://github.com/natn4y</Title>
+            <ArtworkWrapper
+              style={styles.ArtworkWrapperStyle}
+            >
+              <Artwork
+                source={require('../../assets/images/nirvana.webp')}
+              />
+            </ArtworkWrapper>
+            <ArtistName>NIRVANA</ArtistName>
+            <ArtistMusic>Something in the Way</ArtistMusic>
+          </MainContainer>
+        </Wrapper>
         <BottomWrapper>
           <BottomView>
             <TouchableOpacity onPress={() => {}}>
